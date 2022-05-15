@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+main > *,
+article {
+  padding: 1rem;
+}
+
+.cards {
+  margin: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cards li {
+  font-family: monospace;
+  background-color: rgba(0, 187, 255, 0.75);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+a.next {
+  text-decoration: none;
+  color: #00bbff;
+}
+
+a.next::after {
+  content: ' \2192';
+}
+
+nav ul {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+nav li {
+  line-height: 1.5rem;
+}
+nav li a,
+nav li span {
+  display: block;
+  padding: 0 0.5rem;
+}
+nav li a {
+  text-decoration: none;
+  color: #079;
+}
+nav li a:hover {
+  background-color: rgba(0, 119, 153, 0.1);
+}

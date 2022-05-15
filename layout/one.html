@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>One</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .cards li {
+        /* set basis to fix 3 columns and no grow/shrink */
+        flex: 0 0 calc((100% / 3) - 1rem);
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Flexbox grid</h1>
+      <p>
+        Flexbox works well for layouts in a single direction. In this case we
+        use <code>flex-wrap</code> to create a 2d layout "grid". Each cell has a
+        width set to a fraction of the parent to prevent ophan cells from
+        expanding to fill the final row.
+      </p>
+
+      <a class="next" href="two.html">next</a>
+    </article>
+
+    <aside>
+      <ul class="cards">
+        <li>
+          <h2>Card 1</h2>
+          <p>
+            These cards have been laid out using flexbox. By setting
+            <code>display: flex</code> on the parent, all direct children become
+            flex items.
+          </p>
+          <p>
+            This card has some extra content in it, making it taller than the
+            others.
+          </p>
+        </li>
+        <li>
+          <h2>Card 2</h2>
+          <p>
+            These cards have been laid out using flexbox. By setting
+            <code>display: flex</code> on the parent, all direct children become
+            flex items.
+          </p>
+        </li>
+        <li>
+          <h2>Card 3</h2>
+          <p>
+            These cards have been laid out using flexbox. By setting
+            <code>display: flex</code> on the parent, all direct children become
+            flex items.
+          </p>
+        </li>
+        <li>
+          <h2>Card 4</h2>
+          <p>
+            These cards have been laid out using flexbox. By setting
+            <code>display: flex</code> on the parent, all direct children become
+            flex items.
+          </p>
+        </li>
+        <li>
+          <h2>Card 5</h2>
+          <p>
+            These cards have been laid out using flexbox. By setting
+            <code>display: flex</code> on the parent, all direct children become
+            flex items.
+          </p>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

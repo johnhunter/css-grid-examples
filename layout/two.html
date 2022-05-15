@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Two</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+      }
+    </style>
+    <!-- <style>
+      .cards li:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1;
+      }
+      .cards li:nth-child(2) {
+        grid-column: 3;
+        grid-row: 1;
+      }
+      .cards li:nth-child(3) {
+        grid-column: 1;
+        grid-row: 2 / 4;
+      }
+      .cards li:nth-child(4) {
+        grid-column: 2 / 4;
+        grid-row: 2;
+      }
+      .cards li:nth-child(5) {
+        grid-column: 2 / 4;
+        grid-row: 3;
+      }
+    </style> -->
+  </head>
+  <body>
+    <article>
+      <h1>Css grid with templated columns</h1>
+      <p>
+        Grid allows us to set column widths on the container (in this case use
+        <abbr title="fractional unit">fr</abbr>). The children will be laid out
+        within the grid tracks.
+      </p>
+      <p>
+        We can also place cells in specific grid postions, and even span across
+        multiple rows and colums.
+      </p>
+
+      <a class="next" href="three.html">next</a>
+    </article>
+    <aside>
+      <ul class="cards">
+        <li>
+          <h2>Card 1</h2>
+          <p>These cards have been laid out using grid.</p>
+          <p>
+            This card has some extra content in it, making it taller than the
+            others.
+          </p>
+        </li>
+        <li>
+          <h2>Card 2</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+
+        <li>
+          <h2>Card 3</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 4</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 5</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

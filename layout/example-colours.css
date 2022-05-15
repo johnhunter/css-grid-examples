@@ -1,0 +1,17 @@
+header {
+  color: white;
+  background-color: hsl(196, 100%, 30%);
+}
+nav {
+  background-color: hsl(196, 50%, 80%);
+}
+article {
+  color: hsl(196, 100%, 10%);
+}
+aside {
+  background-color: hsl(196, 100%, 80%);
+}
+footer {
+  background-color: hsl(196, 100%, 10%);
+  color: white;
+}

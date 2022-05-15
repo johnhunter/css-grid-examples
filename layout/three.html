@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Three</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .cards li:nth-child(1) {
+        grid-area: a;
+      }
+      .cards li:nth-child(2) {
+        grid-area: b;
+      }
+      .cards li:nth-child(3) {
+        grid-area: c;
+      }
+      .cards li:nth-child(4) {
+        grid-area: d;
+      }
+      .cards li:nth-child(5) {
+        grid-area: e;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        grid-template-areas:
+          'a a b'
+          'c d d'
+          'c e e';
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Css grid with templated areas</h1>
+      <p>
+        Another way to manage layouts with grid is with templated areas. We can
+        assign names to areas and configure the layout graphically in the css.
+      </p>
+
+      <a class="next" href="four.html">next</a>
+    </article>
+    <aside>
+      <ul class="cards">
+        <li>
+          <h2>Card 1</h2>
+          <p>These cards have been laid out using grid.</p>
+          <p>
+            This card has some extra content in it, making it taller than the
+            others.
+          </p>
+        </li>
+        <li>
+          <h2>Card 2</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+
+        <li>
+          <h2>Card 3</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 4</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 5</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

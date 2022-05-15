@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Four</title>
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./example-colours.css" />
+    <style>
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: nav;
+      }
+      article {
+        grid-area: article;
+      }
+      aside {
+        grid-area: sidebar;
+      }
+      footer {
+        grid-area: footer;
+      }
+
+      @supports (display: grid) {
+        @media only screen and (min-width: 690px) {
+          main {
+            display: grid;
+            grid-template-columns: 12rem 3fr 1fr;
+            grid-template-rows: 3rem minmax(calc(100vh - 6rem), auto) 3rem;
+            grid-template-areas:
+              'header  header   header'
+              'nav     article  sidebar'
+              'footer  footer   footer';
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>css <code>&lt;grid&gt;</code></header>
+      <nav>
+        <ul>
+          <li><a href="one.html">One</a></li>
+          <li><a href="two.html">Two</a></li>
+          <li><a href="three.html">Three</a></li>
+          <li><span>Four</span></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>A grid example</h1>
+        <p>
+          This example shows how grid-template properties can help with
+          responsive layouts.
+        </p>
+        <p>
+          We map page elements to named areas and configure a layout for
+          specific screen size and feature support.
+        </p>
+        <p>
+          A 3 column layout is used if the browser supports grid and is greater
+          than 690 width. The Nav column is fixed width with article and sidebar
+          using fractions of the remaining space. We set the minimum hight of
+          the article so it fill the available viewport height.
+        </p>
+      </article>
+      <aside>Sidebar</aside>
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>
