@@ -7,12 +7,17 @@
     <style>
       .cards {
         display: flex;
-        flex-wrap: wrap;
         gap: 1rem;
+        /* flex-wrap: wrap; */
       }
       .cards li {
+        flex: 0 1 auto;
+        /* flex: 0 0 0%; */
+        /* flex: 1 1 0%; */
+        /* flex: 1 1 30%; */
+
         /* set basis to fix 3 columns and no grow/shrink */
-        flex: 0 0 calc((100% / 3) - 1rem);
+        /* flex: 0 0 calc((100% / 3) - 1rem); */
       }
     </style>
   </head>
