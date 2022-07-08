@@ -5,6 +5,14 @@
   <title>Css layout</title>
   <link rel="stylesheet" href="./base.css" />
   <style>
+    article {
+      font-size: clamp(1rem, 2.5vh, 2rem);
+    }
+    section {
+      min-height: 100vh;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
     img {
       max-height: 50vh;
     }
@@ -26,50 +34,54 @@
     blockquote p {
       display: inline;
     }
+    small {
+      font-size: .4em;
+      opacity: .7;
+    }
   </style>
 </head>
 <body>
   <article>
     <h1>CSS layout</h1>
 
-    <figure>
-      <img src="https://cdn-media-1.freecodecamp.org/images/1*k65--sbMNq1Kiqd-jq3N0Q.jpeg" />
-
-      <figcaption>
-        <blockquote>
-          Css is pretty much complete now
-          <!-- Find the original quote in the show -->
-        </blockquote>
-        <cite>Chris Coyer</cite>
-        <a href="https://shoptalkshow.com/">Shoptalk show</a>
-      </figcaption>
-
-    </figure>
-
-    <h2>History of web layouts</h2>
-    <p>The history of web layouts has been one of hacking the tech to make it do something it was never meant to do...</p>
-    <p>
-      <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NCSA_Mosaic_Browser_Screenshot.png/600px-NCSA_Mosaic_Browser_Screenshot.png" /></a>
-    </p>
-    <p>
-      <a href="https://www.amazon.co.uk/Creating-Killer-Web-Sites-Third-generation/dp/1568304331"><img src="https://images-na.ssl-images-amazon.com/images/I/51D2C60AJJL._SX398_BO1,204,203,200_.jpg" /></a>
-    </p>
-
-    <h2>Evolution of techniques</h2>
-
-    <P>
-      While CSS promised the separation of content and styling, it has taken a long time to achieve true separation of content and layout.
-    </P>
-
-    <ul>
-      <li>Layout tables (html is layout)</li>
-      <li>Floats &amp; negative margins (html structure is layout)</li>
-      <li>Flexbox &amp; wrap (css layout but html structure still important)</li>
-      <li>Grid (css separates layout from structure)</li>
-    </ul>
-
-    <h2>Examples</h2>
-    <nav>
+    <section>
+      <figure>
+        <img src="https://cdn-media-1.freecodecamp.org/images/1*k65--sbMNq1Kiqd-jq3N0Q.jpeg" />
+        <figcaption>
+          <blockquote>
+            Css is pretty much complete now
+            <!-- Find the original quote in the show -->
+          </blockquote>
+          <cite>Chris Coyer</cite>
+          <a href="https://shoptalkshow.com/">Shoptalk show</a>
+          <small>also see <a title="This machine kills fascists" href="https://en.wikipedia.org/wiki/This_machine_kills_fascists">Woody Gutherie</a></small>
+        </figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>History of web layouts</h2>
+      <p>The history of web layouts has been one of hacking the tech to make it do something it was never meant to do...</p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NCSA_Mosaic_Browser_Screenshot.png/600px-NCSA_Mosaic_Browser_Screenshot.png" /></a>
+      </p>
+      <p>
+        <a href="https://www.amazon.co.uk/Creating-Killer-Web-Sites-Third-generation/dp/1568304331"><img src="https://images-na.ssl-images-amazon.com/images/I/51D2C60AJJL._SX398_BO1,204,203,200_.jpg" /></a>
+      </p>
+    </section>
+    <section>
+      <h2>Evolution of techniques</h2>
+      <P>
+        While CSS promised the separation of content and styling, it has taken a long time to achieve true separation of content and layout.
+      </P>
+      <ul>
+        <li>Layout tables (html is layout)</li>
+        <li>Floats &amp; negative margins (html structure is layout)</li>
+        <li>Flexbox &amp; wrap (css layout but html structure still important)</li>
+        <li>Grid (css separates layout from structure)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Examples</h2>
       <h3>Historic</h3>
       <ul>
         <li><a href="table-layout.html">Table layout</a></li>
@@ -82,8 +94,7 @@
         <li><a href="css-grid-template-areas.html">Css grid with templated areas</a></li>
         <li><a href="grid-example.html">Grid example</a></li>
       </ul>
-    </nav>
-
+    </section>
   </article>
 </body>
 </html>
