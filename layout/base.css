@@ -56,3 +56,8 @@ nav li a {
 nav li a:hover {
   background-color: rgba(0, 119, 153, 0.1);
 }
+
+::selection {
+  background: red;
+  color: white;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>One</title>
+    <title>Flexbox grid</title>
     <link rel="stylesheet" href="./base.css" />
     <style>
       .cards {
@@ -11,9 +11,20 @@
         /* flex-wrap: wrap; */
       }
       .cards li {
+        /*
+          A quick tour through the flex property...
+        */
+
+        /* Browser default */
         flex: 0 1 auto;
+
+        /* Force width to zero - content will wrap */
         /* flex: 0 0 0%; */
+
+        /* Basis is zero but element can grow */
         /* flex: 1 1 0%; */
+
+        /* Set basis for 3 columns (flex-wrap on parent) */
         /* flex: 1 1 30%; */
 
         /* set basis to fix 3 columns and no grow/shrink */
@@ -31,7 +42,7 @@
         expanding to fill the final row.
       </p>
 
-      <a class="next" href="two.html">next</a>
+      <a class="next" href="css-grid-template-columns.html">next</a>
     </article>
 
     <aside>

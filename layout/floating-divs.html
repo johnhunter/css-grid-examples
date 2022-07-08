@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Floating divs layout</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      /* Just some styling */
+      .col {
+        outline: 1px solid white;
+        padding: 1rem;
+        background-color: rgba(0, 187, 255, 0.75);
+      }
+
+      .col {
+        float: left;
+        width: 100%;
+      }
+
+      .col-3 {
+        width: 33.33%;
+      }
+      .col-3-span-2 {
+        width: 66.66%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Floating divs layout</h1>
+      <p>
+        The html structure is still the layout. But we have limited separation
+        of content and style.
+      </p>
+      <a class="next" href="flexbox-grid.html">next</a>
+    </article>
+    <aside>
+
+      <div class="row">
+        <div class="col">
+          <h2>Cell 1</h2>
+          <p>Some content.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-3">
+          <h2>Cell2</h2>
+          <p>Some content.</p>
+        </div>
+        <div class="col col-3">
+          <h2>Cell 3</h2>
+          <p>Some content.</p>
+        </div>
+        <div class="col col-3">
+          <h2>Cell 4</h2>
+          <p>Some content.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-3-span-2">
+          <h2>Cell 5</h2>
+          <p>Some content.</p>
+        </div>
+        <div class="col col-3">
+          <h2>Cell 6</h2>
+          <p>Some content.</p>
+        </div>
+      </div>
+
+    </aside>
+  </body>
+</html>
