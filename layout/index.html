@@ -8,6 +8,10 @@
     article {
       font-size: clamp(1rem, 2.5vh, 2rem);
     }
+    h1 {
+      margin: 4rem auto;
+      text-align: center;
+    }
     section {
       min-height: 100vh;
       padding-bottom: 2rem;
@@ -16,24 +20,7 @@
     img {
       max-height: 50vh;
     }
-    blockquote {
-      background: #f9f9f9;
-      border-left: 10px solid #ccc;
-      margin: 1.5em 10px;
-      padding: 0.5em 10px;
-      quotes: "\201C""\201D""\2018""\2019";
-    }
-    blockquote:before {
-      color: #ccc;
-      content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-    }
-    blockquote p {
-      display: inline;
-    }
+
     small {
       font-size: .4em;
       opacity: .7;
@@ -42,36 +29,45 @@
 </head>
 <body>
   <article>
-    <h1>CSS layout</h1>
+    <h1>CSS is <small>(almost) </small> complete</h1>
 
     <section>
       <figure>
         <img src="https://cdn-media-1.freecodecamp.org/images/1*k65--sbMNq1Kiqd-jq3N0Q.jpeg" />
         <figcaption>
           <blockquote>
-            Css is pretty much complete now
+            You have every tool that you even want. <br>I basically can't even think of anything else!
             <!-- Find the original quote in the show -->
           </blockquote>
           <cite>Chris Coyer</cite>
-          <a href="https://shoptalkshow.com/">Shoptalk show</a>
+          <a href="https://shoptalkshow.com/513/">Shoptalk show: live at AEA 2022</a>
           <small>also see <a title="This machine kills fascists" href="https://en.wikipedia.org/wiki/This_machine_kills_fascists">Woody Gutherie</a></small>
         </figcaption>
       </figure>
     </section>
     <section>
       <h2>History of web layouts</h2>
-      <p>The history of web layouts has been one of hacking the tech to make it do something it was never meant to do...</p>
-      <p>
-        <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NCSA_Mosaic_Browser_Screenshot.png/600px-NCSA_Mosaic_Browser_Screenshot.png" /></a>
-      </p>
-      <p>
+      <p>The history of web layouts has been one of hacking the technology to make it do something it was never meant to do.</p>
+      <figure>
+        <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"><img src="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg" /></a>
+        <figcaption>NCSA Mosaic and its inline images</figcaption>
+      </figure>
+      <figure>
         <a href="https://www.amazon.co.uk/Creating-Killer-Web-Sites-Third-generation/dp/1568304331"><img src="https://images-na.ssl-images-amazon.com/images/I/51D2C60AJJL._SX398_BO1,204,203,200_.jpg" /></a>
-      </p>
+        <figcaption>
+          <blockquote>
+            I ruined the Web by mixing chocolate and peanut butter so they could never become unmixed. I committed the hangable offense of mixing structure with presentation
+          </blockquote>
+          <cite>David Siegel</cite>
+          <a href="https://www.xml.com/pub/a/w3j/s1.people.html">The Web Is Ruined and I ruined it</a>
+        </figcaption>
+      </figure>
     </section>
     <section>
       <h2>Evolution of techniques</h2>
       <P>
-        While CSS promised the separation of content and styling, it has taken a long time to achieve true separation of content and layout.
+        While CSS promised the separation of content and styling, it has taken a long time to achieve true separation.
+        And the road is paved with the wrecks of well intentioned hacks.
       </P>
       <ul>
         <li>Layout tables (html is layout)</li>
