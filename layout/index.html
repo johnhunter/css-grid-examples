@@ -25,6 +25,9 @@
       font-size: .4em;
       opacity: .7;
     }
+    li {
+      margin: .5em;
+    }
   </style>
 </head>
 <body>
@@ -36,8 +39,7 @@
         <img src="https://cdn-media-1.freecodecamp.org/images/1*k65--sbMNq1Kiqd-jq3N0Q.jpeg" />
         <figcaption>
           <blockquote>
-            You have every tool that you even want. <br>I basically can't even think of anything else!
-            <!-- Find the original quote in the show -->
+            You have every tool that you even want[...] <br>I basically can't even think of anything else!
           </blockquote>
           <cite>Chris Coyer</cite>
           <a href="https://shoptalkshow.com/513/">Shoptalk show: live at AEA 2022</a>
@@ -64,17 +66,35 @@
       </figure>
     </section>
     <section>
-      <h2>Evolution of techniques</h2>
+      <h2>Evolution of techniques 😧</h2>
       <P>
         While CSS promised the separation of content and styling, it has taken a long time to achieve true separation.
         And the road is paved with the wrecks of well intentioned hacks.
       </P>
-      <ul>
-        <li>Layout tables (html is layout)</li>
-        <li>Floats &amp; negative margins (html structure is layout)</li>
-        <li>Flexbox &amp; wrap (css layout but html structure still important)</li>
-        <li>Grid (css separates layout from structure)</li>
-      </ul>
+      <ol>
+        <li>
+          Layout tables (html is layout)
+        </li>
+        <li>
+          Floats &amp; negative margins (html structure is layout)
+        </li>
+        <li>
+          Flexbox &amp; wrap (css layout but html structure still important)
+        </li>
+        <li>
+          Grid (css separates layout from structure)
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2>CSS Grid Layout Module 🎉</h2>
+
+      <p>Finally fit for purpose&hellip;</p>
+
+      <blockquote>
+        As websites evolved from simple documents into complex, interactive applications, techniques for document layout, e.g. floats, were not necessarily well suited for application layout. […] The capabilities of grid layout address these problems. It provides a mechanism for authors to divide available space for layout into columns and rows using a set of predictable sizing behaviors.
+      </blockquote>
+      <cite><a href="https://www.w3.org/TR/css-grid-1/#background">https://www.w3.org/TR/css-grid-1/#background</a></cite>
     </section>
     <section>
       <h2>Examples</h2>
