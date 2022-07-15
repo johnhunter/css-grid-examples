@@ -10,6 +10,10 @@ If you have comments or questions you can raise them in the [Discussions area](h
 
 Additions and fixes are welcome, please raise a PR.
 
+## Running locally
+
+Just clone and open. For the talk I used the VSCode [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 ## Covered
 
 - [x] Historic layouts (table and floats)
