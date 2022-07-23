@@ -1,116 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Css layout</title>
-  <link rel="stylesheet" href="./base.css" />
-  <style>
-    article {
-      font-size: clamp(1rem, 2.5vh, 2rem);
-    }
-    h1 {
-      margin: 4rem auto;
-      text-align: center;
-    }
-    section {
-      min-height: 100vh;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #ccc;
-    }
-    img {
-      max-height: 50vh;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css layout</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      article {
+        font-size: clamp(1rem, 2.5vh, 2rem);
+      }
+      h1 {
+        margin: 4rem auto;
+        text-align: center;
+      }
+      section {
+        min-height: 100vh;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #ccc;
+      }
+      img {
+        max-height: 50vh;
+      }
 
-    small {
-      font-size: .4em;
-      opacity: .7;
-    }
-    li {
-      margin: .5em;
-    }
-  </style>
-</head>
-<body>
-  <article>
-    <h1>CSS is <small>(almost) </small> complete</h1>
+      small {
+        font-size: 0.4em;
+        opacity: 0.7;
+      }
+      li {
+        margin: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>CSS is <small>(almost) </small> complete</h1>
 
-    <section>
-      <figure>
-        <img src="https://cdn-media-1.freecodecamp.org/images/1*k65--sbMNq1Kiqd-jq3N0Q.jpeg" />
-        <figcaption>
-          <blockquote>
-            You have every tool that you even want[...] <br>I basically can't even think of anything else!
-          </blockquote>
-          <cite>Chris Coyer</cite>
-          <a href="https://shoptalkshow.com/513/">Shoptalk show: live at AEA 2022</a>
-          <small>also see <a title="This machine kills fascists" href="https://en.wikipedia.org/wiki/This_machine_kills_fascists">Woody Gutherie</a></small>
-        </figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2>History of web layouts</h2>
-      <p>The history of web layouts has been one of hacking the technology to make it do something it was never meant to do.</p>
-      <figure>
-        <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"><img src="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg" /></a>
-        <figcaption>NCSA Mosaic and its inline images</figcaption>
-      </figure>
-      <figure>
-        <a href="https://www.amazon.co.uk/Creating-Killer-Web-Sites-Third-generation/dp/1568304331"><img src="https://images-na.ssl-images-amazon.com/images/I/51D2C60AJJL._SX398_BO1,204,203,200_.jpg" /></a>
-        <figcaption>
-          <blockquote>
-            I ruined the Web by mixing chocolate and peanut butter so they could never become unmixed. I committed the hangable offense of mixing structure with presentation
-          </blockquote>
-          <cite>David Siegel</cite>
-          <a href="https://www.xml.com/pub/a/w3j/s1.people.html">The Web Is Ruined and I ruined it</a>
-        </figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2>Evolution of techniques 😧</h2>
-      <P>
-        While CSS promised the separation of content and styling, it has taken a long time to achieve true separation.
-        And the road is paved with the wrecks of well intentioned hacks.
-      </P>
-      <ol>
-        <li>
-          Layout tables (html is layout)
-        </li>
-        <li>
-          Floats &amp; negative margins (html structure is layout)
-        </li>
-        <li>
-          Flexbox &amp; wrap (css layout but html structure still important)
-        </li>
-        <li>
-          Grid (css separates layout from structure)
-        </li>
-      </ol>
-    </section>
-    <section>
-      <h2>CSS Grid Layout Module 🎉</h2>
+      <section>
+        <figure>
+          <img
+            src="https://cdn-media-1.freecodecamp.org/images/1*k65--sbMNq1Kiqd-jq3N0Q.jpeg"
+          />
+          <figcaption>
+            <blockquote>
+              You have every tool that you even want[...] <br />I basically
+              can't even think of anything else!
+            </blockquote>
+            <cite>Chris Coyer</cite>
+            <a href="https://shoptalkshow.com/513/"
+              >Shoptalk show: live at AEA 2022</a
+            >
+            <small
+              >also see
+              <a
+                title="This machine kills fascists"
+                href="https://en.wikipedia.org/wiki/This_machine_kills_fascists"
+                >Woody Gutherie</a
+              ></small
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>History of web layouts</h2>
+        <p>
+          The history of web layouts has been one of hacking the technology to
+          make it do something it was never meant to do.
+        </p>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)"
+            ><img
+              src="https://www.ncsa.illinois.edu/wp-content/uploads/2021/10/mosaic.1.0.2-2048x1910.jpg"
+          /></a>
+          <figcaption>NCSA Mosaic and its inline images</figcaption>
+        </figure>
+        <figure>
+          <a
+            href="https://www.amazon.co.uk/Creating-Killer-Web-Sites-Third-generation/dp/1568304331"
+            ><img
+              src="https://images-na.ssl-images-amazon.com/images/I/51D2C60AJJL._SX398_BO1,204,203,200_.jpg"
+          /></a>
+          <figcaption>
+            <blockquote>
+              I ruined the Web by mixing chocolate and peanut butter so they
+              could never become unmixed. I committed the hangable offense of
+              mixing structure with presentation
+            </blockquote>
+            <cite>David Siegel</cite>
+            <a href="https://www.xml.com/pub/a/w3j/s1.people.html"
+              >The Web Is Ruined and I ruined it</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Evolution of techniques 😧</h2>
+        <p>
+          While CSS promised the separation of content and styling, it has taken
+          a long time to achieve true separation. And the road is paved with the
+          wrecks of well intentioned hacks.
+        </p>
+        <ol>
+          <li>Layout tables (html is layout)</li>
+          <li>Floats &amp; negative margins (html structure is layout)</li>
+          <li>
+            Flexbox &amp; wrap (css layout but html structure still important)
+          </li>
+          <li>Grid (css separates layout from structure)</li>
+        </ol>
+      </section>
+      <section>
+        <h2>CSS Grid Layout Module 🎉</h2>
 
-      <p>Finally fit for purpose&hellip;</p>
+        <p>Finally fit for purpose&hellip;</p>
 
-      <blockquote>
-        As websites evolved from simple documents into complex, interactive applications, techniques for document layout, e.g. floats, were not necessarily well suited for application layout. […] The capabilities of grid layout address these problems. It provides a mechanism for authors to divide available space for layout into columns and rows using a set of predictable sizing behaviors.
-      </blockquote>
-      <cite><a href="https://www.w3.org/TR/css-grid-1/#background">https://www.w3.org/TR/css-grid-1/#background</a></cite>
-    </section>
-    <section>
-      <h2>Examples</h2>
-      <h3>Historic</h3>
-      <ul>
-        <li><a href="table-layout.html">Table layout</a></li>
-        <li><a href="floating-divs.html">Floating divs layout</a></li>
-      </ul>
-      <h3>Present day</h3>
-      <ul>
-        <li><a href="flexbox-grid.html">Flexbox grid</a></li>
-        <li><a href="css-grid-template-columns.html">Css grid with templated columns</a></li>
-        <li><a href="css-grid-template-areas.html">Css grid with templated areas</a></li>
-        <li><a href="grid-example.html">Grid example</a></li>
-      </ul>
-    </section>
-  </article>
-</body>
+        <blockquote>
+          As websites evolved from simple documents into complex, interactive
+          applications, techniques for document layout, e.g. floats, were not
+          necessarily well suited for application layout. […] The capabilities
+          of grid layout address these problems. It provides a mechanism for
+          authors to divide available space for layout into columns and rows
+          using a set of predictable sizing behaviors.
+        </blockquote>
+        <cite
+          ><a href="https://www.w3.org/TR/css-grid-1/#background"
+            >https://www.w3.org/TR/css-grid-1/#background</a
+          ></cite
+        >
+      </section>
+      <section>
+        <h2>Examples</h2>
+        <h3>Historic</h3>
+        <ul>
+          <li><a href="table-layout.html">Table layout</a></li>
+          <li><a href="floating-divs.html">Floating divs layout</a></li>
+        </ul>
+        <h3>Present day</h3>
+        <ul>
+          <li><a href="flexbox-grid.html">Flexbox grid</a></li>
+          <li>
+            <a href="css-grid-template-columns.html"
+              >Css grid with templated columns</a
+            >
+          </li>
+          <li>
+            <a href="css-grid-template-areas.html"
+              >Css grid with templated areas</a
+            >
+          </li>
+          <li><a href="grid-example.html">Grid example</a></li>
+          <li><a href="css-grid-auto.html">Implicit vs. explicit grid</a></li>
+        </ul>
+      </section>
+    </article>
+  </body>
 </html>

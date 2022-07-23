@@ -21,6 +21,6 @@ Just clone and open. For the talk I used the VSCode [Live Server extension](http
 - [x] Explicit grid (columns)
 - [x] Explicit grid (areas)
 - [x] Example grid layout
+- [x] Implicit grid
 - [ ] Further flexbox alignment
 - [ ] Further sizing in flexbox and grid
-- [ ] Implicit grid

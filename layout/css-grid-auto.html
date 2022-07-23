@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css grid - implicit vs. explicit grid</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .cards {
+        display: grid;
+        gap: 1rem;
+
+        /* 1. Template set for colums only - rows have default styling */
+        grid-template-columns: repeat(3, 1fr);
+
+        /* 2. Template for first (explicit) row */
+        /* grid-template-rows: 5rem; */
+
+        /* 3. Set row styling for following (implicit) rows */
+        /* grid-auto-rows: 5rem; */
+      }
+
+      .cards > * {
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Css grid - implicit vs. explicit grid</h1>
+      <p>Applying styling for items outside our defined grid.</p>
+    </article>
+    <aside>
+      <ul class="cards">
+        <li>
+          <h2>Card 1</h2>
+          <p>These cards have been laid out using grid.</p>
+          <p>
+            This card has some extra content in it, making it taller than the
+            others.
+          </p>
+        </li>
+        <li>
+          <h2>Card 2</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+
+        <li>
+          <h2>Card 3</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+
+        <li>
+          <h2>Card 4</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 5</h2>
+          <p>These cards have been laid out using grid.</p>
+          <p>
+            This card has some extra content in it, making it taller than the
+            others.
+          </p>
+        </li>
+        <li>
+          <h2>Card 6</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+
+        <li>
+          <h2>Card 7</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 8</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>
