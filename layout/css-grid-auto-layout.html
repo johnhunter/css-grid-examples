@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css grid auto layout</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .cards {
+        display: grid;
+        gap: 1rem;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        /* 1. Implicit rows height */
+        grid-auto-rows: 5rem;
+
+        /* 2. row / column flow for implicit grid */
+        /* default = grid-auto-flow: row */
+        /* grid-auto-flow: column; */
+        /* grid-auto-flow: dense; */
+      }
+
+      /* 2. Set 2nd item to explicit position in grid */
+      /* .cards li:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2 / 4;
+        background-color: hsl(196, 100%, 90%);
+      } */
+
+      /* 
+        Set spaning for every 4th item
+        Note: alternative track placement
+      */
+      /* .cards li:nth-child(4n - 3) {
+        background-color: hsl(196, 100%, 40%);
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+      } */
+
+      .cards > * {
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Css grid auto layout</h1>
+
+      <p>Using auto layout with explicit grid track placement.</p>
+    </article>
+    <aside>
+      <ul class="cards">
+        <li>
+          <h2>Card 1</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 2</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 3</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 4</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 5</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 6</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 7</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 8</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 9</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 10</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 11</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 12</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+
+        <li>
+          <h2>Card 13</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 14</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 15</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+        <li>
+          <h2>Card 16</h2>
+          <p>These cards have been laid out using grid.</p>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>
