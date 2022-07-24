@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css grid minmax</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .cards {
+        display: grid;
+        gap: 1rem;
+        background: hsl(196, 100%, 90%);
+        padding: 1rem;
+
+        /* 1. proportional columns */
+        grid-template-columns: repeat(3, 1fr);
+
+        /* 2. column width based on content */
+        /* grid-template-columns: repeat(3, minmax(min-content, max-content)); */
+
+        /* 3. combination of column widths */
+        /* grid-template-columns: 3rem minmax(1rem, 4fr) minmax(min-content, 1fr); */
+      }
+
+      #card-2-extra {
+        display: none;
+      }
+      #card-6-extra {
+        display: none;
+      }
+
+      .cards > li {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Css grid minmax</h1>
+    </article>
+    <aside>
+      <ul class="cards">
+        <li>
+          <h2>1</h2>
+        </li>
+        <li>
+          <h2>Card 2<span id="card-2-extra"> has more content</span></h2>
+        </li>
+        <li>
+          <h2>Card 3</h2>
+        </li>
+        <li>
+          <h2>4</h2>
+        </li>
+        <li>
+          <h2>Card 5</h2>
+        </li>
+        <li>
+          <h2>Card 6</h2>
+
+          <p id="card-6-extra">
+            Some more text here that might change the contentsize.
+          </p>
+        </li>
+        <li>
+          <h2>7</h2>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

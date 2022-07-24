@@ -21,6 +21,10 @@ Just clone and open. For the talk I used the VSCode [Live Server extension](http
 - [x] Explicit grid (columns)
 - [x] Explicit grid (areas)
 - [x] Example grid layout
-- [x] Implicit grid
-- [ ] Further flexbox alignment
-- [ ] Further sizing in flexbox and grid
+- [x] Implicit vs expicit grid
+- [x] Controlling track sizes
+
+## Resources
+
+- [CSS Grid on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+- [Grid by Example - Rachel Andrew](https://gridbyexample.com/)
